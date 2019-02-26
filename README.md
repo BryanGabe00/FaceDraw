@@ -1,1 +1,1 @@
-This is how you use BMICalcPlus developed by Bryan Gabe
+This is how you use FaceDraw developed by Bryan Gabe
