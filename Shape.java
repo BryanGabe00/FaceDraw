@@ -6,12 +6,20 @@ public abstract class Shape
   Color color;
 
   //constructors
+  public Shape(){ this(0, 0, 1, 1); }
+
   public Shape(int x, int y, int width, int height)
   {
     setX(x);
     setY(y);
     setWidth(width);
     setHeight(height);
+    setColor(Color.red);
+  }
+  public Shape(int x, int y, int width, int height, Color color)
+  {
+    this(x, y, width, height);
+    setColor(color);
   }
   //getters
   public final int getX() { return x; }
@@ -21,8 +29,8 @@ public abstract class Shape
   public final Color getColor() { return color; }
 
   //abstract methods
-  public abstract void calcArea();
-  public abstract void calcPerimeter();
+  public abstract double calcArea();
+  public abstract double calcPerimeter();
 
   //setters
   public final void setX(int x)
